@@ -50,16 +50,15 @@ class DrivableMap {
         return false;
     }
 
-
     /* TODO: Write a method named getTradable that takes no arguments and
      *       returns a List containing all of the Tradable items in
      *       drivable_map.
      */
-    public List<Drivable> getTradable(){
-        List<Drivable> r_list = new ArrayList<Drivable>();
+    public List<Tradable> getTradable(){
+        List<Tradable> r_list = new ArrayList<Tradable>();
         for (Drivable i : this.drivable_map.values()){
             if (i instanceof Tradable){
-                r_list.add(i);
+                r_list.add((Tradable) i);
             }
         }
         return r_list;
