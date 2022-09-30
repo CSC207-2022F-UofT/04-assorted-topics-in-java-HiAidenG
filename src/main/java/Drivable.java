@@ -9,7 +9,6 @@ interface Drivable {
      **/
     void downgradeSpeed();
 
-
     /**
      * Return the maximum speed of this Vehicle.
      *
